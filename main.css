@@ -1,0 +1,230 @@
+/* === General ===*/
+
+
+* 
+{
+    box-sizing: border-box; /* Uses border-box in all elements */
+}
+
+body 
+{
+  font-family: Georgia, 'Times New Roman', Times, serif, monospace; /*Used Google to find modern font*/
+  font-size: 16px; /* Sets a base font size. */
+  line-height:2; /* Increases the line height for better readability. */
+  margin:2rem; 
+  padding:2rem;
+  color:#408EC6; /* Blue color for the text */
+  background-color: #7A2048; /* Set the background as a compliment color to the font */
+  border:#1E2761 3px solid; /* Color of border. */
+}
+
+h1 
+{
+  font-size:2rem; /* Sets a larger size for level-1 headings */
+  font-weight: bold; /* Makes the element bold. */
+  text-align:center; /* Aligns the level-1 heading to the center. */
+  text-transform:capitalize; /* Capatalize the element. */
+  color:#1E2761; /* Color of element. */
+}
+
+h2 
+{
+  font-size:1.5rem; /* Sets a moderate font size for level- headings. */
+  text-decoration:underline; /* Underlines headings. */
+  text-transform:uppercase; /* Converts text to uppercase for visual prominence. */
+}
+
+h3
+{
+  font-size: 1.2rem; /* Set a size that between level-2 and text on the page to set visual differeintation. */
+  color:#1E2761; /* Sets the color to blue. */
+  text-decoration:underline; /* Creates an underline under the header element. */
+  text-transform:uppercase; /* Converts text to uppercase for visual prominence. */
+}
+
+h1, h2, h3
+{
+  padding-bottom: 1rem; /* Applies padding below headers to provide spacing and ensure content doesnt feel cramped. */
+}
+
+p, li, table, form
+{
+  font-size: 0.8rem; /*Sets font size for text on the page */
+}
+
+a 
+{
+    text-decoration: none; /* Removes default underline fromt the link. */
+}
+
+header section
+{
+  display: flex;
+  justify-content: space-between; /* Separates items from each other in the x-axis. */
+  height: 20rem;
+}
+
+main section,
+footer section
+{
+  margin: 4rem 0; /* Separates them using collapsing margins. */
+  border-top: 2px solid #1E2761; /* Strengthens the separation between them. */
+}
+
+/* Adjusts form elements to capture same look and feel. */
+form input,
+form textarea,
+form select
+{
+  padding: 0.1rem 0.2rem;
+  color: #408EC6;
+  border: 2px dotted #1E2761;
+  background-color: #131313;
+}
+
+form fieldset
+{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+form button
+{
+  padding: 0.5rem 1rem;
+  color: #408EC6;
+  border: 2px solid #010101;
+  background-color: #1E2761;
+}
+
+/* Remove outlines from form elements, ensuring a cleaner look. */
+form input,
+form textarea
+{
+  outline: none;
+}
+
+/* === HEADER - Introduction SECTION === */
+header section .image-container
+{
+  align-self: flex-start; /* Positions itself to the start of y-axis. */
+
+  /* Makes the image shape square. */
+  width: 15rem;
+  height: 15rem;
+}
+
+ header section .image-container img
+{
+  display: block;
+
+  /* Fits the image into the container div. */
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%; /* Rounds the image. */
+
+  object-fit: cover; /* Preserves the original aspect ratio. */
+  object-position: 100% 20%; /* Makes the face visible moving the image down. */
+}
+
+header section .name-container
+{
+  align-self: center; /* Positions itself to the center of y-axis. */
+}
+
+header section .information-container
+{
+  align-self: flex-end; /* Positions itself to the end of y-axis. */
+}
+
+/* === MAIN - Technologies SECTION === */
+.technologies .container
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* === MAIN - Tools SECTION === */
+.tools .container
+{
+  display: flex;
+  justify-content: center;
+}
+
+/* === MAIN - Projects SECTION === */
+.project-entry
+{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.project-entry .image-container
+{
+  display: flex;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+.project-entry .image-container img
+{
+  object-fit: contain;
+}
+
+.projects .message-container
+{
+  margin-top: 2rem;
+  text-align: end;
+}
+
+/* === MAIN - Contact SECTION === */
+.contact .form-container
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact .text-input-container,
+.contact .select-container,
+.contact .checkbox-container
+{
+  display: flex;
+  width: 30rem;
+  margin-bottom: 1rem;
+}
+
+.contact .text-input-container label,
+.contact .select-container label
+{
+  flex-grow: 1;
+}
+
+.contact .text-input-container input,
+.contact .text-input-container textarea,
+.contact .select-container select
+{
+  width: 20rem;
+}
+
+.contact .text-input-container textarea
+{
+  height: 10rem;
+}
+
+.contact .button-container
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact .button-container button[type=reset]
+{
+  margin-right: 1rem;
+}
+
+/* === HELPERS === */
+.border-dotted
+{
+  border: 2px dotted #408EC6;
+}
