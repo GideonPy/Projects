@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('form');
-    const nameInput = document.getElementById('Name'); // Corrected from ="Name" to id="Name" in HTML
+    const nameInput = document.getElementById('Name'); 
     const emailInput = document.getElementById('Email');
-    const organizationInput = document.getElementById('ogranization'); // Note the typo in the id
+    const organizationInput = document.getElementById('ogranization'); 
     const roleInput = document.getElementById('role');
     const messageTextArea = document.getElementById('message');
     const submitButton = form.querySelector('button[type="submit"]');
